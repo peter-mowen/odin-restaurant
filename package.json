@@ -1,0 +1,25 @@
+{
+  "name": "odin-restaurant",
+  "version": "1.0.0",
+  "description": "The goal of this project is to learn how to use webpack to create a website. This project is a single page web application where each \"page\" is constructed inside the `container` div using JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peter-mowen/odin-restaurant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/peter-mowen/odin-restaurant/issues"
+  },
+  "homepage": "https://github.com/peter-mowen/odin-restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.112.2",
+    "webpack-cli": "^7.3.1"
+  }
+}
