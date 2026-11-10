@@ -23,7 +23,6 @@ export class Page {
     }
 
     hide() {
-        console.log("Hiding content");
         this.#content.classList.add('is-hidden');
     }
 
