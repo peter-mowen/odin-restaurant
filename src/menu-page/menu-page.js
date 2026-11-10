@@ -6,6 +6,5 @@ export class MenuPage extends Page{
         let content = this.content;
         content.classList.add('menu-page');
         content.textContent = "Checkout all of the delicious pies!";
-        super.hide();
     }
 };

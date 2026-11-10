@@ -6,6 +6,5 @@ export class HomePage extends Page{
         let content = this.content;
         content.classList.add('home-page');
         content.textContent = "Welcome to Little Jack's Pie Shop!";
-        super.hide();
     }
 };

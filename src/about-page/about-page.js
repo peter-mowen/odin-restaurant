@@ -6,6 +6,5 @@ export class AboutPage extends Page{
         let content = this.content;
         content.classList.add('about-page');
         content.textContent = "Little Jack Horner - Pie Chef";
-        super.hide();
     }
 };

@@ -12,6 +12,7 @@ export class Page {
 
         this.#content = document.createElement('div');
         this.#content.classList.add('page-content');
+        this.hide();
     }
 
     get content() {
