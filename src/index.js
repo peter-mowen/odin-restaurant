@@ -35,9 +35,9 @@ function handleNavigationButton(event) {
 }
 
 const content = document.querySelector('#content');
-content.appendChild(homePage.render());
-content.appendChild(menuPage.render());
-content.appendChild(aboutPage.render());
+content.appendChild(homePage.content);
+content.appendChild(menuPage.content);
+content.appendChild(aboutPage.content);
 homePage.show();
 
 let currentPage = homePage;

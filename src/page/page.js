@@ -4,10 +4,6 @@ export class Page {
     // private
     #content;
 
-    get _content() {
-        return this.#content;
-    }
-
     // public
     constructor() {
         if (new.target === Page) {
@@ -18,8 +14,8 @@ export class Page {
         this.#content.classList.add('page-content');
     }
 
-    render() {
-        throw new Error("Subclass must implement the content getter");
+    get content() {
+        return this.#content;
     }
 
     hide() {
