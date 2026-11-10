@@ -5,6 +5,8 @@ export class HomePage extends Page{
         super();
         let content = this.content;
         content.classList.add('home-page');
-        content.textContent = "Welcome to Little Jack's Pie Shop!";
+        const title = document.createElement('h1');
+        title.textContent = "Little Jack's Pie Shop";
+        content.appendChild(title);
     }
 };
