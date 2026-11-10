@@ -4,7 +4,7 @@ export class MenuPage extends Page{
     constructor() {
         super();
         let content = super._content;
-        content.classList.add('home-page');
+        content.classList.add('menu-page');
         content.textContent = "Checkout all of the delicious pies!";
         super.hide();
     }

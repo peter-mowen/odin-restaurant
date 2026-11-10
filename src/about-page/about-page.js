@@ -4,7 +4,7 @@ export class AboutPage extends Page{
     constructor() {
         super();
         let content = super._content;
-        content.classList.add('home-page');
+        content.classList.add('about-page');
         content.textContent = "Little Jack Horner - Pie Chef";
         super.hide();
     }
