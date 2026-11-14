@@ -1,4 +1,5 @@
 import { Page } from "../components/page/page.js"
+import { reviews } from "./reviews.js";
 
 export class HomePage extends Page{
     constructor() {
@@ -11,22 +12,16 @@ export class HomePage extends Page{
         content.appendChild(title);
 
         const reviewContainer = document.createElement('div');
-        const review = document.createElement('div');
-        const customer = document.createElement('div');
 
-        review.textContent =
-            `Little Jack's Curds and Whey Pie is absolutely delightful! Creamy,
-            comforting, and served with the flakiest crust I've ever tasted.
-            I was enjoying it in the garden when a rather unpleasant spider
-            stopped by—but that's hardly the pie shop's fault. I'll definitely
-            be back!`;
+        for (const review of reviews) {
+            const reviewComments = document.createElement('div');
+            const customer = document.createElement('div');
+            reviewComments.textContent = review.comments;
 
-        customer.textContent = "Little Miss Muffet";
-
-        reviewContainer.appendChild(review);
-        reviewContainer.appendChild(customer);
-
-        content.appendChild(reviewContainer);
+            customer.textContent = review.customer;
+            reviewContainer.append(reviewComments, customer);
+            content.appendChild(reviewContainer);
+        }
 
         const hoursContainer = document.createElement('div');
         const hoursTitle = document.createElement('h3');
