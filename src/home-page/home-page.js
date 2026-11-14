@@ -7,7 +7,7 @@ export class HomePage extends Page{
         content.classList.add('home-page');
 
         const title = document.createElement('h2');
-        title.textContent = "Little Jack's Pie Shop";
+        title.textContent = "Home";
         content.appendChild(title);
 
         const reviewContainer = document.createElement('div');
