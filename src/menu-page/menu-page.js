@@ -1,4 +1,4 @@
-import { Page } from "./../page/page.js"
+import { Page } from "../components/page/page.js"
 import { menu } from "./menu-data.js";
 
 export class MenuPage extends Page{

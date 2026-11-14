@@ -1,4 +1,4 @@
-import { Page } from "../page/page.js"
+import { Page } from "../components/page/page.js"
 
 export class HomePage extends Page{
     constructor() {
