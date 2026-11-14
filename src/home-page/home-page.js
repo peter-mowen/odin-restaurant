@@ -1,5 +1,6 @@
 import { Page } from "../components/page/page.js"
 import { reviews } from "./reviews.js";
+import { hoursOfOperation } from "./hours.js";
 
 export class HomePage extends Page{
     constructor() {
@@ -28,24 +29,16 @@ export class HomePage extends Page{
         hoursTitle.textContent = "Hours"
         hoursContainer.appendChild(hoursTitle);
 
-        const hoursOfOperation = document.createElement('ul');
-        const daysToHours = {
-            'Monday'    : '11AM - 9PM',
-            'Tuesday'   : '11AM - 9PM',
-            'Wednesday' : '11AM - 9PM',
-            'Thursday'  : '11AM - 9PM',
-            'Friday'    : '11AM - 9PM',
-            'Saturday'  : '9AM - 9PM',
-            'Sunday'    : '9AM - 9PM'
-        }
+        const hoursList = document.createElement('ul');
 
-        for (let day in daysToHours) {
+
+        for (const day in hoursOfOperation) {
             const dailyHours = document.createElement('li');
-            dailyHours.textContent = `${day}: ${daysToHours[day]}`;
-            hoursOfOperation.appendChild(dailyHours);
+            dailyHours.textContent = `${day}: ${hoursOfOperation[day]}`;
+            hoursList.appendChild(dailyHours);
         }
 
-        hoursContainer.appendChild(hoursOfOperation);
+        hoursContainer.appendChild(hoursList);
 
         content.appendChild(hoursContainer);
 
