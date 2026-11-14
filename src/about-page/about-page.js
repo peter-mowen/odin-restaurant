@@ -1,3 +1,4 @@
+import { PageTitle } from "../components/page-title/page-title.js";
 import { Page } from "../components/page/page.js"
 
 export class AboutPage extends Page{
@@ -5,9 +6,7 @@ export class AboutPage extends Page{
         super();
         this.content.classList.add('about-page');
 
-        const title = document.createElement('h2');
-        title.textContent = "About";
-
+        const title = new PageTitle("About");
         const aboutContentContainer = document.createElement('div');
 
         const aboutContent = [
@@ -31,6 +30,6 @@ export class AboutPage extends Page{
             aboutContentContainer.appendChild(paragraphElement);
         }
 
-        this.content.append(title, aboutContentContainer);
+        this.content.append(title.render(), aboutContentContainer);
     }
 };

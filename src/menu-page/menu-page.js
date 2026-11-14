@@ -1,3 +1,4 @@
+import { PageTitle } from "../components/page-title/page-title.js";
 import { Page } from "../components/page/page.js"
 import { menu } from "./menu-data.js";
 
@@ -6,9 +7,9 @@ export class MenuPage extends Page{
         super();
 
         this.content.classList.add('menu-page');
-        const title = document.createElement('h2');
-        title.textContent = "Menu";
-        this.content.appendChild(title);
+
+        const title = new PageTitle("Menu");
+        this.content.appendChild(title.render());
 
         for (let course in menu) {
             const courseContainer = document.createElement('div');

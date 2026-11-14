@@ -1,6 +1,7 @@
 import { Page } from "../components/page/page.js"
 import { reviews } from "./reviews.js";
 import { hoursOfOperation } from "./hours.js";
+import { PageTitle } from "../components/page-title/page-title.js";
 
 export class HomePage extends Page{
     constructor() {
@@ -8,9 +9,8 @@ export class HomePage extends Page{
         let content = this.content;
         content.classList.add('home-page');
 
-        const title = document.createElement('h2');
-        title.textContent = "Home";
-        content.appendChild(title);
+        const title = new PageTitle("Home");
+        content.appendChild(title.render());
 
         const reviewContainer = document.createElement('div');
 
