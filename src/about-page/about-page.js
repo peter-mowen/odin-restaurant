@@ -5,7 +5,7 @@ export class AboutPage extends Page{
         super();
         this.content.classList.add('about-page');
 
-        const title = document.createElement('h1');
+        const title = document.createElement('h2');
         title.textContent = "About";
 
         const aboutContentContainer = document.createElement('div');

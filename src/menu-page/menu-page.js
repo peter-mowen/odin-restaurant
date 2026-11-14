@@ -6,19 +6,19 @@ export class MenuPage extends Page{
         super();
 
         this.content.classList.add('menu-page');
-        const title = document.createElement('h1');
+        const title = document.createElement('h2');
         title.textContent = "Menu";
         this.content.appendChild(title);
 
         for (let course in menu) {
             const courseContainer = document.createElement('div');
-            const courseTitle = document.createElement('h2');
+            const courseTitle = document.createElement('h3');
             courseTitle.textContent = course;
             courseContainer.appendChild(courseTitle);
 
             for (const menuItem of menu[course]) {
                 const menuItemDiv = document.createElement('div');
-                const menuItemTitle = document.createElement('h3');
+                const menuItemTitle = document.createElement('h4');
                 const menuItemDescription = document.createElement('div');
 
                 menuItemTitle.textContent = menuItem.name;

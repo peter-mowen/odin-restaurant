@@ -6,7 +6,7 @@ export class HomePage extends Page{
         let content = this.content;
         content.classList.add('home-page');
 
-        const title = document.createElement('h1');
+        const title = document.createElement('h2');
         title.textContent = "Little Jack's Pie Shop";
         content.appendChild(title);
 
@@ -29,7 +29,7 @@ export class HomePage extends Page{
         content.appendChild(reviewContainer);
 
         const hoursContainer = document.createElement('div');
-        const hoursTitle = document.createElement('h2');
+        const hoursTitle = document.createElement('h3');
         hoursTitle.textContent = "Hours"
         hoursContainer.appendChild(hoursTitle);
 
@@ -56,7 +56,7 @@ export class HomePage extends Page{
 
         const locationContainer = document.createElement('div');
 
-        const locationTitle = document.createElement('h2');
+        const locationTitle = document.createElement('h3');
         locationTitle.textContent = "Location";
         locationContainer.appendChild(locationTitle)
 
